@@ -25,7 +25,7 @@ function setup() {
 	World.add(world,ball);
 
 	groundObj=new ground(width/2,670,width,20);
-	leftSide = new ground(1100,600,20,120);
+	//create left side object
 	rightSide = new ground(1350,600,20,120);
 
 	Engine.run(engine);
@@ -41,7 +41,7 @@ function draw() {
   ellipse(ball.position.x,ball.position.y,radius,radius);
 
   groundObj.display();
-  leftSide.display();  
+  //display leftSide 
   rightSide.display();
   
 }
